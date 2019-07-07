@@ -1,0 +1,157 @@
+﻿body, html {
+	height: 99%;
+	margin: 0;
+	font-family: calibri;
+}
+
+.main_img {
+	position: absolute;
+	width: 69.7%;
+	height: 100%;
+	overflow: auto;
+}
+
+.right_sidebar {
+	display: inline-block;
+	height: 100%;
+	width: 30%;
+	border: 1px solid black;
+	float: right;
+	overflow: auto;
+}
+
+.main_head {
+	color: rgb(72, 54, 153);
+}
+
+.clear {
+	display: block;
+	float: right;
+	margin-right: 10px;
+	color: grey;
+}
+
+.prefix {
+	display: inline-block;
+}
+
+.bordered {
+	border-bottom: 1px dashed #010101;
+}
+
+.textures {
+	height: 300px;
+	overflow: auto;
+	margin-top: 22px;
+}
+
+.textures_head {
+	text-align: center;
+}
+
+.textures_imgs {
+	margin-top: 10px;
+	margin-left: 1%;
+}
+.t_img {
+	display: inline-block;
+}
+
+.t_img:hover {
+	cursor: pointer;
+}
+
+.textures_img {
+	margin-right: 10px;
+	margin-bottom: 15px;
+	width: 70px;
+	border: solid white 2px;
+	border-radius: 10px;
+	box-shadow: 3px 5px 20px 0px black;
+}
+
+.summary {
+	height: 30%;
+}
+
+.current_floor {
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	width: 28%;
+}
+
+.selected_floor {
+	width: 70px;
+	height: 70px;
+	border: 2px solid black; 
+}
+
+.summary_input {
+	margin-bottom: 7px;
+	margin-top: -40px;
+}
+
+.find_store {
+	display: inline-block;
+	width: 60%;
+}
+
+.find_store_input {
+	height: 30px;
+	width: 60%;
+	border: 3px solid rgb(72, 54, 153);
+	border-radius: 7px 0 0 7px;
+}
+
+.find_store_btn {
+	color: #fff;
+	background: rgb(72, 54, 153);
+	border: none;
+	border-radius: 0 7px 7px 0;
+	height: 30px;
+	-webkit-transform: translate(-5px, 0);
+	-ms-transform: translate(-5px, 0);
+	-o-transform: translate(-5px, 0);
+	transform: translate(-5px, 0);
+}
+
+.find_store_btn:focus, .find_store_input:focus {
+	outline: none;
+}
+
+.find_store_btn:active {
+	background: rgb(60,45,128);
+}
+
+.angle_input {
+	text-align: center;
+}
+
+/* Медиа-запросы для вертикального масштабирования */
+
+@media (max-width: 1319px) {
+	
+	.find_store {
+	}
+
+}
+
+@media (min-height: 400px) and (max-height: 628px) {
+
+	.textures {
+		height: 150px;
+	}
+
+	.summary {
+		height: 200px;
+	}
+}
+
+@media (min-height: 629px) and (max-height: 759px) {
+
+	.textures {
+		height: 150px;
+	}
+
+}

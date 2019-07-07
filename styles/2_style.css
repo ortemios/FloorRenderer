@@ -1,0 +1,96 @@
+html {
+	height: 100%;
+	font-family: calibri;
+}
+
+body {
+	margin: 0;
+}
+
+.main {
+	display: block;
+	position: relative;
+	height: 85vh;
+}
+
+.size_select {
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.size_select p input {
+	float: right;
+	width: 20%;
+	margin-right: 5px;
+}
+
+.outter_img {
+	position: relative;
+	background-image: url(../img/sprite_grid.jpg);
+	height: 100%;
+	width: 100%;
+}
+
+.inner_img {
+	display: inline-block;
+	position: absolute;
+	height: 70%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.inner_img img {
+	height: 100%;
+}
+
+.panel {
+	height: 15vh;
+	background-color: rgb(28, 28, 28);
+}
+
+.btns {
+	text-align: center;
+	padding-top: 2.1%;
+}
+
+.upload_btn {
+	border: 2px solid rgb(87, 87, 87);
+	border-radius: 10px;
+	height: 50px;
+	color: #fff;
+	margin-right: 10px;
+	background: linear-gradient(to top, rgb(28, 28, 28), rgb(87, 87, 87));
+	font-weight: 700;
+}
+
+.proceed_btn {
+	border: 2px solid rgb(87, 87, 87);
+	border-radius: 10px;
+	height: 50px;
+	color: #fff;
+	font-weight: 700;
+	background: linear-gradient(to bottom, rgb(129, 93, 183), rgb(81, 71, 124));
+}
+
+input:focus {
+	outline: none;
+}
+
+input:hover {
+	cursor: pointer;
+}
+
+.upload_btn:active {
+	background: linear-gradient(to bottom, rgb(28, 28, 28), rgb(87, 87, 87));
+}
+
+.proceed_btn:active {
+	background: linear-gradient(to top, rgb(129, 93, 183), rgb(81, 71, 124));
+}
